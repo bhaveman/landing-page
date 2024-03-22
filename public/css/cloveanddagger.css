@@ -54,3 +54,15 @@ ul.pricingSubPoints {
       align-items: center;
       justify-content: space-between;
   }
+
+  .navbar-custom {
+    height: 200px;
+  }
+
+  header {
+    background-color: rgba(30, 30, 33, 0.95);
+  }
+
+  .logo img {
+    max-width: 200px;
+  }
