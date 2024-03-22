@@ -121,7 +121,11 @@ script list
 			var sticky = $('.header'),
 			scroll = $(window).scrollTop();
 
-			if (scroll >= 200) sticky.addClass('fixed');
-			else sticky.removeClass('fixed');
+			if (scroll >= 200) {
+				sticky.addClass('fixed');
+			}
+			else {
+				sticky.removeClass('fixed');
+			}
 		});
 	}
