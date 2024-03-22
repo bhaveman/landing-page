@@ -66,3 +66,9 @@ ul.pricingSubPoints {
   .logo img {
     max-width: 200px;
   }
+
+  #playVideo, .modal-dialog, .modal-content {
+    width: 90vw;
+    height: 90vh;
+    margin:auto;
+  }
