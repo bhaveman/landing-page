@@ -1,0 +1,46 @@
+body {
+  background-image: url("/public/images/mossyforest.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* .logoDiv img {
+  width: 400px;
+} */
+.medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.dark-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.card-background {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+header {
+  background-color: rgba(30, 30, 33, 0.95);
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+#playVideo,
+.modal-dialog,
+.modal-content {
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+}/*# sourceMappingURL=cloveanddagger.css.map */

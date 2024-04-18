@@ -31,13 +31,13 @@
 
 // 8. Add additional custom code here
 
-$primary: #B71935;
+$primary: #B71935; 
 $danger: $orange;
 
 
 
 body {
-    background-image: url("../images/mossyforest.png");
+    background-image: url("/public/images/mossyforest.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
