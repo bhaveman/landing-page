@@ -18,6 +18,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 
+	<!-- MDBootstrap -->
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+	<!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
 
 
 	<!-- links -->
@@ -33,6 +40,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+
 
 
 	<title>Clove and Dagger Welcome</title>
@@ -86,20 +95,24 @@
 				<h1 class="title_with_detail">
 					<h1 class="medievalsharp-regular text-center">Event Details</h1>
 
-					<p class="title_detail">
-						Imagine yourself seated in a cozy tavern, surrounded by fellow adventurers eager to embark on a
-						journey of epic proportions. As you sip on your ale and feast on hearty fare, you'll be
-						transported
-						to a world of imagination, where every decision you make shapes the course of your destiny.
-					</p>
-					<p class="title_detail">
-						With our expert game masters guiding the way, you'll delve into dungeons, battle fearsome
-						creatures,
-						and uncover hidden treasures - all while enjoying a sumptuous tavern-style dinner that's fit for
-						a
-						hero. So, gather your party, sharpen your wits, and prepare for an unforgettable evening of
-						adventure, laughter and delicious delights. The quest awaits - will you answer the call?
-					</p>
+					<div class="px-4">
+						<p>
+							Imagine yourself seated in a cozy tavern, surrounded by fellow adventurers eager to embark
+							on a
+							journey of epic proportions. As you sip on your ale and feast on hearty fare, you'll be
+							transported
+							to a world of imagination, where every decision you make shapes the course of your destiny.
+						</p>
+						<p>
+							With our expert game masters guiding the way, you'll delve into dungeons, battle fearsome
+							creatures,
+							and uncover hidden treasures - all while enjoying a sumptuous tavern-style dinner that's fit
+							for
+							a
+							hero. So, gather your party, sharpen your wits, and prepare for an unforgettable evening of
+							adventure, laughter and delicious delights. The quest awaits - will you answer the call?
+						</p>
+					</div>
 			</div>
 
 			<div class="container dark-container px-4 py-5 " id="icon-grid">
@@ -111,7 +124,7 @@
 							<i class="bi bi-calendar2-event-fill px-2"></i>
 						</h1>
 						<div>
-							<h4 class="fw-bold mb-0">Upcoming Events</h4>
+							<h4 class="fw-bold mb-0">Date Options</h4>
 							<p>May 31, 6:30pm - 11:30pm<br />
 								June 1, 6:30pm - 11:30pm</p>
 						</div>
@@ -166,138 +179,187 @@
 				<h5 class="title_detail text-center">Five exciting options to experience the night</h5>
 			</div>
 
-			<div class="album py-5">
-				<div>
 
-					<div class="row row-cols-1 row-cols-md-2 g-3">
-						<div class="col">
-							<div class="card mb-3" style="max-width: 540px;">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img src="public/images/turkey-leg.jpg" class="img-fluid rounded-start"
-											alt="Tier 1 meal">
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">This is a wider card with supporting text below as a
-												natural lead-in to additional
-												content. This content is a little bit longer.</p>
-											<p class="card-text"><small class="text-muted">Last updated 3 mins
-													ago</small></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card mb-3" style="max-width: 540px;">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img src="public/images/ribs-and-sausage.jpg" class="img-fluid rounded-start"
-											alt="Tier 1 meal">
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">This is a wider card with supporting text below as a
-												natural lead-in to additional
-												content. This content is a little bit longer.</p>
-											<p class="card-text"><small class="text-muted">Last updated 3 mins
-													ago</small></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card mb-3" style="max-width: 540px;">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img src="public/images/tomahawk-steak.jpg" class="img-fluid rounded-start"
-											alt="Tier 1 meal">
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">This is a wider card with supporting text below as a
-												natural lead-in to additional
-												content. This content is a little bit longer.</p>
-											<p class="card-text"><small class="text-muted">Last updated 3 mins
-													ago</small></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="col">
-							<div class="card mb-3" style="max-width: 540px;">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img src="public/images/turkey-leg.jpg" class="img-fluid rounded-start"
-											alt="Tier 1 meal">
+			<div class="text-center container py-5">
+
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card" style="--bs-bg-opacity: .5">
+							<div class="card-header">
+								<h3 class="card-title mb-3">The Adventurer's Tale</h3>
+								<h5 class="card-title">Tier 1</h5>
+
+
+							</div>
+							<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+								data-mdb-ripple-color="light">
+								<img src="public/images/turkey-leg-rect.jpg" class="w-100" />
+								<a href="#!">
+									<div class="mask">
+										<!-- <div class="d-flex justify-content-start align-items-end h-100">
+											<h5><span class="badge bg-primary ms-2">Popular</span></h5>
+										</div> -->
 									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">This is a wider card with supporting text below as a
-												natural lead-in to additional
-												content. This content is a little bit longer.</p>
-											<p class="card-text"><small class="text-muted">Last updated 3 mins
-													ago</small></p>
-										</div>
+									<div class="hover-overlay">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 									</div>
-								</div>
+								</a>
+							</div>
+							<div class="card-body">
+
+								<h6 class="mb-3">$61.99</h6>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card mb-3" style="max-width: 540px;">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img src="public/images/turkey-leg.jpg" class="img-fluid rounded-start"
-											alt="Tier 1 meal">
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">This is a wider card with supporting text below as a
-												natural lead-in to additional
-												content. This content is a little bit longer.</p>
-											<p class="card-text"><small class="text-muted">Last updated 3 mins
-													ago</small></p>
+					</div>
+
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">The Hero's Quest</h3>
+								<h5 class="card-title">Tier 2</h5>
+							</div>
+
+							<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+								data-mdb-ripple-color="light">
+								<img src="public/images/ribs-and-sausage-rect.jpg" class="w-100" />
+								<a href="#!">
+									<div class="mask">
+										<div class="d-flex justify-content-start align-items-end h-100">
+											<h5><span class="badge bg-success ms-2">Best value</span></h5>
 										</div>
 									</div>
-								</div>
+									<div class="hover-overlay">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+									</div>
+								</a>
+							</div>
+							<div class="card-body">
+								<a href="" class="text-reset">
+									<h5 class="card-title mb-3">Product name</h5>
+								</a>
+								<a href="" class="text-reset">
+									<p>Category</p>
+								</a>
+								<h6 class="mb-3">$61.99</h6>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title mb-3">The Champion's Exploits</h3>
+								<h5 class="card-title">Tier 3</h5>
+
+							</div>
+
+							<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+								<img src="public/images/tomahawk-steak-rect.jpg" class="w-100" />
+								<a href="#!">
+									<div class="mask">
+										<div class="d-flex justify-content-start align-items-end h-100">
+											<h5><span class="badge bg-danger ms-2">Popular</span></h5>
+										</div>
+									</div>
+									<div class="hover-overlay">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+									</div>
+								</a>
+							</div>
+							<div class="card-body">
+								<a href="" class="text-reset">
+									<h5 class="card-title mb-3">Product name</h5>
+								</a>
+								<a href="" class="text-reset">
+									<p>Category</p>
+								</a>
+								<h6 class="mb-3">
+									<s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+								</h6>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title mb-3">Experience the Realm</h3>
+								<h5 class="card-title">Observer</h5>
+
+							</div>
+
+							<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+								<img src="public/images/observer-rect.jpeg" class="w-100" />
+								<a href="#!">
+									<div class="mask">
+										<div class="d-flex justify-content-start align-items-end h-100">
+											<!-- <h5>
+												<span class="badge bg-success ms-2">Eco</span><span
+													class="badge bg-danger ms-2">-10%</span>
+											</h5> -->
+										</div>
+									</div>
+									<div class="hover-overlay">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+									</div>
+								</a>
+							</div>
+							<div class="card-body">
+								<a href="" class="text-reset">
+									<h5 class="card-title mb-3">Product name</h5>
+								</a>
+								<a href="" class="text-reset">
+									<p>Category</p>
+								</a>
+								<h6 class="mb-3">
+									<s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+								</h6>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title mb-3">The Fellowship Bundle</h3>
+								<h5 class="card-title">Full table</h5>
+
+							</div>
+
+							<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+								data-mdb-ripple-color="light">
+								<img src="public/images/bundle.webp" class="w-100" />
+								<a href="#!">
+									<div class="mask">
+										<div class="d-flex justify-content-start align-items-end h-100">
+											<h5>
+												<span class="badge bg-primary ms-2">Group</span>
+											</h5>
+										</div>
+									</div>
+									<div class="hover-overlay">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+									</div>
+								</a>
+							</div>
+							<div class="card-body">
+								<a href="" class="text-reset">
+									<h5 class="card-title mb-3">Product name</h5>
+								</a>
+								<a href="" class="text-reset">
+									<p>Category</p>
+								</a>
+								<h6 class="mb-3">$61.99</h6>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="pricingList">
 
-			<div class="priceBox">
-				<p class="title">The Adventurer's Tale</p>
-				<p class="price">$119.99</p>
-				<p class="infoPricing">
-					Dive into the immersive world of table-top role-playing games as you join fellow adventurers
-					in
-					a thrilling TTRPG session.
-				</p>
-				<ul class="pricingPoints">
-					<li>Player Seat</li>
-					<li>Tavern Feast
-						<ul class="pricingSubPoints">
-							<li>Smoked Turkey Leg</li>
-							<li>Upgrade Options Available</li>
-						</ul>
-					</li>
-					<li>Commemorative Dice</li>
-				</ul>
-				<button id="tier1-button" class="btn trans comBtn" title="Buy Now">Buy Now</button>
+
 			</div>
 		</div>
+
 
 	</section>
 
@@ -491,6 +553,11 @@
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+	<!-- MDBootstrap -->
+	<!-- MDB -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
 
 </body>
 

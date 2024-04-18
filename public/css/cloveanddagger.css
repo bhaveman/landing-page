@@ -1,48 +1,17 @@
-body {
-    background-image: url("../images/mossyforest.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 5 | @import "../node_modules/bootstrap/scss/functions";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\cloveanddagger.scss 5:9  root stylesheet */
 
-/* .logoDiv img {
-  width: 400px;
-} */
-
-
-.medievalsharp-regular {
-  font-family: "MedievalSharp", cursive;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 60px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"../node_modules/bootstrap/scss/functions\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\cloveanddagger.scss 5:9  root stylesheet";
 }
-
-.container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-
-.dark-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-}
-
-
-
-  header {
-    background-color: rgba(30, 30, 33, 0.95);
-  }
-
-  .logo img {
-    max-width: 200px;
-  }
-
-  #playVideo, .modal-dialog, .modal-content {
-    width: 90vw;
-    height: 90vh;
-    margin:auto;
-  }
-
-
-
