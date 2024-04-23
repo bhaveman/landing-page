@@ -2,39 +2,49 @@
 // Option B: Include parts of Bootstrap
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-//@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 
+
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
-@import "/node_modules/bootstrap/scss/variables";
-@import "/node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
+$primary: #B71935; // set the $primary variable
+$secondary: #939498; // set the $secondary variable
+
+
+// merge with existing $theme-colors map
+$theme-colors: map-merge($theme-colors, (
+    "primary": $primary,
+
+    ));
+
+
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/root";
 
 // 6. Optionally include any other parts as needed
-// @import "../node_modules/bootstrap/scss/utilities";
-// @import "../node_modules/bootstrap/scss/reboot";
-// @import "../node_modules/bootstrap/scss/type";
-// @import "../node_modules/bootstrap/scss/images";
-// @import "../node_modules/bootstrap/scss/containers";
-// @import "../node_modules/bootstrap/scss/grid";
-// @import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-// @import "../node_modules/bootstrap/scss/utilities/api";
+@import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
 
-$primary: #B71935; 
-$danger: $orange;
 
-
+$grey-trans: rgba(25, 25, 25, 0.9);
 
 body {
     background-image: url("/public/images/mossyforest.png");
@@ -47,6 +57,20 @@ body {
   width: 400px;
 } */
 
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+}
+.btn-outline-primary:hover {
+    background-color: $primary;
+    color: white;
+    border-color: $primary;
+    outline-color: $primary;
+}
 
 .medievalsharp-regular {
     font-family: "MedievalSharp", cursive;
@@ -59,30 +83,49 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.tier-title {
 
+}
 
 .dark-container {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
 }
 
-.card-background {
-    background-color: rgba(0, 0, 0, 0.95);
+.ticket-card {
+    background-color: $grey-trans;
+    /*height:860px;*/
 }
 
 
 header {
-    background-color: rgba(30, 30, 33, 0.95);
+    background-color: rgba(30, 30, 33, 0.9);
 }
 
 .logo img {
     max-width: 200px;
 }
 
-#playVideo,
-.modal-dialog,
-.modal-content {
-    width: 90vw;
-    height: 90vh;
-    margin: auto;
+
+ul {
+    list-style: none;
 }
+ul.feature-list {
+    padding-left: 70px;
+}
+
+li {
+    font-size: small;
+    text-align: left;
+}
+
+li::before {
+    content: "•";
+    color: $primary;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    text-align: left;
+}
+
+
