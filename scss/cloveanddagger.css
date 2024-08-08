@@ -7048,9 +7048,10 @@ body {
   outline-color: #B71935;
 }
 
-.medievalsharp-regular {
-  font-family: "MedievalSharp", cursive;
-  font-weight: 500;
+.header-text {
+  /* choose font here */
+  font-family: "Beau Rivage", cursive;
+  font-weight: 400;
   font-style: normal;
   font-size: 60px;
 }
